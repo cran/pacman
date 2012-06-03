@@ -1,6 +1,6 @@
-191834f90b7a66a1e1dc1f1d5520bc8e *DESCRIPTION
+8c8842ce269db2a20625ee3e60c2ce99 *DESCRIPTION
 d55f9a92f569589aa5d877902413ee00 *NAMESPACE
-764c0ca1f2b5c70f54249ac2580d14e7 *NEWS
+1ed37d9caf8d51e8ee192275a828f6d6 *NEWS
 bc2169393a8dec2319b308d1655cf810 *R/p_author.R
 c4bc39c897531643934caebc20d664d8 *R/p_base.R
 12711e30ec502607bbe062cb6957db64 *R/p_basepath.R
@@ -42,12 +42,12 @@ db15b1eb9b9a26e298cde131d6b39124 *R/p_version.R
 1abd5ec152d023a1aa3460536703ca52 *R/p_vignette.R
 e8f6afbc2a867e824bd4c66d32cb96be *R/p_zip.R
 d33abbf7a8ab384393db35e0081228a6 *R/utils.R
-05b8b3a33650e1501c514a43473d778c *README.md
+7deb157be59e0b8e4a3a3596c6c542cb *README.md
 03abeb4d07ac43317ad0a84495d796d0 *build/vignette.rds
-3ec01fb620359da63eccc88282940de1 *inst/CITATION
+8e4814162ee10a89057e990ad6a384be *inst/CITATION
 df99bf459823ff99a18387445e38fb83 *inst/doc/Introduction_to_pacman.R
 756bf8ca789f642e27bf4a6d6ba98005 *inst/doc/Introduction_to_pacman.Rmd
-2341ab4f0fa601a0fb4d33bbbb6e7c6e *inst/doc/Introduction_to_pacman.html
+ad1ae805c74900c820e7ef9328943982 *inst/doc/Introduction_to_pacman.html
 49120008a93cff2596e5cebf664ae457 *inst/doc/pacman_functions_quick_reference.R
 376bc487d77d930a748e4ecbb79cb640 *inst/doc/pacman_functions_quick_reference.Rmd
 f2efcc791b6d951df31cf2a682b7cbfa *inst/doc/pacman_functions_quick_reference.html

@@ -558,7 +558,7 @@ sapply(names(success)[!success], require, character.only = TRUE)
 </code></pre>
 
 <pre><code>
-Version of pacman (v. 0.2.0) is suitable
+Version of pacman (v. 0.3.0) is suitable
 
 Version of testthat (v. 0.9.1) is suitable
 </code></pre>
@@ -784,7 +784,7 @@ fakePackage
 <pre><code class="r">p_exists(pacman)  
 </code></pre>
 
-<pre><code>[1] FALSE
+<pre><code>[1] TRUE
 </code></pre>
 
 <pre><code class="r">p_exists(pacman, local = TRUE)
@@ -910,7 +910,7 @@ $URL
 </code></pre>
 
 <pre><code>$Version
-[1] &quot;0.2.0&quot;
+[1] &quot;0.3.0&quot;
 </code></pre>
 
 <h5>Extracting Package Names</h5>
@@ -968,7 +968,7 @@ p_info(MASS, &quot;Depends&quot;)
 To cite pacman in publications, please use:
 
   Rinker, T. W. &amp; Kurkiewicz, D. (2013). pacman: Package
-  Management for R. version 0.2.0. University at Buffalo. Buffalo,
+  Management for R. version 0.3.0. University at Buffalo. Buffalo,
   New York. http://github.com/trinker/pacman
 
 A BibTeX entry for LaTeX users is
@@ -978,7 +978,7 @@ A BibTeX entry for LaTeX users is
     author = {Tyler W. Rinker and Dason Kurkiewicz},
     organization = {University at Buffalo/SUNY},
     address = {Buffalo, New York},
-    note = {version 0.2.0},
+    note = {version 0.3.0},
     year = {2013},
     url = {http://github.com/trinker/pacman},
   }
@@ -1104,7 +1104,7 @@ cite it when using it for data analysis. See also
 <pre><code class="r">p_ver(pacman)
 </code></pre>
 
-<pre><code>[1] &#39;0.2.0&#39;
+<pre><code>[1] &#39;0.3.0&#39;
 </code></pre>
 
 <pre><code class="r">p_ver(pacman) &gt;= &quot;0.2.0&quot;
@@ -1195,7 +1195,7 @@ p_vign(pacman)
 <pre><code class="r">length(p_cran())
 </code></pre>
 
-<pre><code>[1] 6284
+<pre><code>[1] 6309
 </code></pre>
 
 <pre><code class="r">p_iscran(&quot;qdap&quot;)
@@ -1261,7 +1261,7 @@ p_sa(&quot;hadley&quot;, &quot;author&quot;)
 <pre><code class="r">p_path()
 </code></pre>
 
-<pre><code>[1] &quot;C:/Users/Tyler/AppData/Local/Temp/RtmpumjEAo/Rinst3790489c6ab9&quot;
+<pre><code>[1] &quot;C:/Users/Tyler/AppData/Local/Temp/RtmpYZrDcC/Rinst1b8825e37230&quot;
 [2] &quot;C:/R/R-devel/library&quot;                                          
 </code></pre>
 
