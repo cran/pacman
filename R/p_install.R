@@ -35,7 +35,7 @@ function(package, character.only = FALSE, path = getOption("download_path"), ...
                 tar_path <- file.choose()
             }      
         }
-        install.packages(tar_path, repos = NULL, type = "source", ...)
+        utils::install.packages(tar_path, repos = NULL, type = "source", ...)
     } else {
       
         p_set_cranrepo()
@@ -49,16 +49,34 @@ function(package, character.only = FALSE, path = getOption("download_path"), ...
             package <- NULL 
         } 
 
-        install.packages(package, ...)
-
+        response <- tryCatch(
+            utils::install.packages(package, ...),
+            warning = function(w) {   
+                ## for users with bioconductor on installed, check to see if
+                ## package is available in the bioconductor repos
+                if (!p_isinstalled('BiocInstaller')) {
+                    source("http://bioconductor.org/biocLite.R")
+                }           
+                suppressMessages(suppressWarnings(
+                    eval(parse(
+                        text=sprintf("BiocInstaller::biocLite('%s', suppressUpdates=TRUE)", 
+                            package)
+                    ))
+                ))
+            
+            }
+        )
     }
     
     ## check if package was installed & success notification.
     pack <- ifelse(is.null(package), "Your package", package)
+
     if (pack %in% p_lib() | is.null(package)) {
         message(sprintf("\n%s installed", pack))
         return(invisible(TRUE))
     } else {
+        # If unable to install, raise warning and continue
+        warning(response)
         return(invisible(FALSE))
     }
 }

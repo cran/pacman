@@ -13,15 +13,15 @@ opts_knit$set(upload.fun = image_uri, self.contained=TRUE)
 ## set mirror
 options(repos="http://cran.rstudio.com/")
 
-## ----, echo=FALSE, results='asis', warning=FALSE-------------------------
+## ---- echo=FALSE, results='asis', warning=FALSE--------------------------
 uri_embed("r_pacman.png", 
     "width=\"350\", height=\"150\" style=\"display:block; margin-left:auto; margin-right:auto;\"")
 
-## ----, echo=FALSE, results='asis', warning=FALSE-------------------------
+## ---- echo=FALSE, results='asis', warning=FALSE--------------------------
 installing_tab <- readLines("tables/01_installing_loading_deleting.R")
 cat(paste(installing_tab, collapse="\n"))
 
-## ----, eval = FALSE------------------------------------------------------
+## ---- eval = FALSE-------------------------------------------------------
 #  p_load(..., char, install = TRUE, update = getOption("pac_update"), character.only = FALSE)
 
 ## ----eval=FALSE----------------------------------------------------------
@@ -54,39 +54,39 @@ p_install_version(
 #  p_isinstalled(aprof)
 #  p_isloaded(aprof)
 
-## ----, eval = FALSE------------------------------------------------------
+## ---- eval = FALSE-------------------------------------------------------
 #  p_unload(..., negate = FALSE, char, character.only = FALSE)
 
-## ----, eval = FALSE------------------------------------------------------
+## ---- eval = FALSE-------------------------------------------------------
 #  p_load(lattice)
 #  p_isloaded(lattice)
 #  p_unload(lattice)
 #  p_isloaded(lattice)
 
-## ----, eval = FALSE------------------------------------------------------
+## ---- eval = FALSE-------------------------------------------------------
 #  p_update()
 
-## ----, eval = FALSE------------------------------------------------------
+## ---- eval = FALSE-------------------------------------------------------
 #  p_update(FALSE)
 
-## ----, eval = FALSE------------------------------------------------------
+## ---- eval = FALSE-------------------------------------------------------
 #  p_delete(fakePackage, stats)
 
-## ----, echo=FALSE, results='asis', warning=FALSE-------------------------
+## ---- echo=FALSE, results='asis', warning=FALSE--------------------------
 installing_tab <- readLines("tables/02_session_information.R")
 cat(paste(installing_tab, collapse="\n"))
 
-## ----, eval = FALSE------------------------------------------------------
+## ---- eval = FALSE-------------------------------------------------------
 #  p_loaded()
 
-## ----, eval = FALSE------------------------------------------------------
+## ---- eval = FALSE-------------------------------------------------------
 #  p_loaded(all = TRUE)
 
 ## ------------------------------------------------------------------------
 p_loaded(base, MASS)
 p_isloaded(methods, stats)
 
-## ----, echo=FALSE, results='asis', warning=FALSE-------------------------
+## ---- echo=FALSE, results='asis', warning=FALSE--------------------------
 installing_tab <- readLines("tables/03_local_package_information.R")
 cat(paste(installing_tab, collapse="\n"))
 
@@ -103,13 +103,13 @@ p_depends(lattice, local = TRUE)
 p_depends(MASS)  
 p_depends(MASS, local = TRUE)
 
-## ----, echo=FALSE, results='hide'----------------------------------------
+## ---- echo=FALSE, results='hide'-----------------------------------------
 .pinfo <- names(p_info())
 .right_paren <- c(rep("(", length(.pinfo) - 1 ), "and (")
 .fields <- paste(.right_paren, letters[1:length(.pinfo)], ") ", .pinfo, sep = "", collapse = ", ")
 .fields <- gsub("(c)", "&#40;c)", .fields, fixed = TRUE)
 
-## ----, eval = FALSE------------------------------------------------------
+## ---- eval = FALSE-------------------------------------------------------
 #  p_info(package, ..., fields = NULL)
 
 ## ------------------------------------------------------------------------
@@ -148,66 +148,66 @@ p_version()
 p_ver(pacman)
 p_ver(pacman) >= "0.2.0"
 
-## ----, eval=FALSE--------------------------------------------------------
+## ---- eval=FALSE---------------------------------------------------------
 #  p_help(pacman)
 #  p_help(pacman, web = FALSE)
 #  p_help(pacman, build.pdf = TRUE)
 
-## ----, eval=FALSE--------------------------------------------------------
+## ---- eval=FALSE---------------------------------------------------------
 #  p_news()
 #  p_news(pacman)
 #  ## Grab specfic version subsets
 #  subset(p_news(lattice), Version == 0.7)
 
-## ----, eval=FALSE--------------------------------------------------------
+## ---- eval=FALSE---------------------------------------------------------
 #  p_vignette()
 #  p_vign(pacman)
 
-## ----, eval=FALSE--------------------------------------------------------
+## ---- eval=FALSE---------------------------------------------------------
 #  p_interactive()
 
-## ----, echo=FALSE, results='asis', warning=FALSE-------------------------
+## ---- echo=FALSE, results='asis', warning=FALSE--------------------------
 installing_tab <- readLines("tables/04_internet_based_info.R")
 cat(paste(installing_tab, collapse="\n"))
 
-## ----, eval=FALSE--------------------------------------------------------
+## ---- eval=FALSE---------------------------------------------------------
 #  p_cran()
 
 ## ------------------------------------------------------------------------
 length(p_cran())
 p_iscran("qdap")
 
-## ----, eval=FALSE--------------------------------------------------------
+## ---- eval=FALSE---------------------------------------------------------
 #  p_sa("color", "package")
 #  p_sa("hadley", "author")
 
-## ----, echo=FALSE, results='asis', warning=FALSE-------------------------
+## ---- echo=FALSE, results='asis', warning=FALSE--------------------------
 installing_tab <- readLines("tables/05_library_information.R")
 cat(paste(installing_tab, collapse="\n"))
 
 ## ------------------------------------------------------------------------
 p_path()
 
-## ----, eval=FALSE--------------------------------------------------------
+## ---- eval=FALSE---------------------------------------------------------
 #  p_lib()
 #  p_base()
 
-## ----, eval=FALSE--------------------------------------------------------
+## ---- eval=FALSE---------------------------------------------------------
 #  p_search_library(begins.with = NULL, contains = NULL)
 
-## ----, eval=FALSE--------------------------------------------------------
+## ---- eval=FALSE---------------------------------------------------------
 #  p_sl("pa")
 #  p_sl(contains = "man")
 #  p_sl(begins.with ="pa", contains = "man")
 
-## ----, echo=FALSE, results='asis', warning=FALSE-------------------------
+## ---- echo=FALSE, results='asis', warning=FALSE--------------------------
 installing_tab <- readLines("tables/06_pacman_tools.R")
 cat(paste(installing_tab, collapse="\n"))
 
 ## ----css, echo = FALSE---------------------------------------------------
 options(markdown.HTML.stylesheet = "css/style.css")
 
-## ----, echo=FALSE, message=FALSE-----------------------------------------
+## ---- echo=FALSE, message=FALSE------------------------------------------
 #write.bibtex(file="references.bib")
 
 ## ----clean-up, include=FALSE---------------------------------------------

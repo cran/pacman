@@ -41,10 +41,10 @@ function (package = "base", all = FALSE, character.only = FALSE){
         packagefunctions <- getNamespaceExports(ns)
     }
 
-    datas <- suppressWarnings(data(package = package)[["results"]][, 3])
+    datas <- suppressWarnings(utils::data(package = package)[["results"]][, 3])
     packagefunctions <- packagefunctions[!packagefunctions %in% datas]
 
-    return(packagefunctions)
+    return(sort(packagefunctions))
 }
 
 #' @rdname p_functions
