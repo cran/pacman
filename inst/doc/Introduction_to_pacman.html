@@ -534,7 +534,7 @@ sapply(names(success)[!success], require, character.only = TRUE)
 </code></pre>
 
 <p>This will install packages available on CRAN, or, if the user has previously
-installed <a href="http://www.bioconductor.org/">Bioconductor</a>, from the Bioconductor
+installed <a href="https://www.bioconductor.org/">Bioconductor</a>, from the Bioconductor
 repos.</p>
 
 <h4>Installing &amp; Loading from GitHub</h4>
@@ -562,11 +562,11 @@ repos.</p>
 </code></pre>
 
 <pre><code>
-Version of pacman (v. 0.4.1) is suitable
+Version of pacman (v. 0.4.5) is suitable
 </code></pre>
 
 <pre><code>
-Version of testthat (v. 0.11.0.9000) is suitable
+Version of testthat (v. 1.0.2) is suitable
 </code></pre>
 
 <h3>Installing Temporarily</h3>
@@ -580,7 +580,7 @@ p_isloaded(aprof)
 </code></pre>
 
 <pre><code>> p_temp(aprof)
-trying URL 'http://cran.rstudio.com/bin/windows/contrib/3.1/aprof_0.2.zip'
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.1/aprof_0.2.zip'
 Content type 'application/zip' length 34037 bytes (33 Kb)
 opened URL
 downloaded 33 Kb
@@ -823,7 +823,7 @@ p_isinstalled(pacman)
 [1] &quot;grid&quot;      &quot;grDevices&quot; &quot;graphics&quot;  &quot;stats&quot;     &quot;utils&quot;    
 
 $Suggests
-[1] &quot;KernSmooth&quot; &quot;MASS&quot;      
+[1] &quot;KernSmooth&quot;   &quot;MASS&quot;         &quot;latticeExtra&quot;
 </code></pre>
 
 <pre><code class="r">p_depends(lattice, local = TRUE)
@@ -833,7 +833,7 @@ $Suggests
 [1] &quot;grid&quot;      &quot;grDevices&quot; &quot;graphics&quot;  &quot;stats&quot;     &quot;utils&quot;    
 
 $Suggests
-[1] &quot;KernSmooth&quot; &quot;MASS&quot;      
+[1] &quot;KernSmooth&quot;   &quot;MASS&quot;         &quot;latticeExtra&quot;
 </code></pre>
 
 <pre><code class="r">p_depends(MASS)  
@@ -882,17 +882,17 @@ p_info()
 </code></pre>
 
 <pre><code>Package: base
-Version: 3.2.4
+Version: 3.4.0
 Priority: base
 Title: The R Base Package
 Author: R Core Team and contributors worldwide
 Maintainer: R Core Team &lt;R-core@r-project.org&gt;
 Description: Base R functions.
-License: Part of R 3.2.4
+License: Part of R 3.4.0
 Suggests: methods
-Built: R 3.2.4; ; 2016-03-10 12:31:23 UTC; windows
+Built: R 3.4.0; ; 2017-04-21 14:36:08 UTC; windows
 
--- File: C:/R/R-32~1.4/library/base/Meta/package.rds 
+-- File: C:/R/R-34~1.0/library/base/Meta/package.rds 
 </code></pre>
 
 <pre><code class="r">names(p_info())
@@ -906,7 +906,7 @@ Built: R 3.2.4; ; 2016-03-10 12:31:23 UTC; windows
 </code></pre>
 
 <pre><code>$Author
-[1] &quot;Tyler Rinker [aut, cre, ctb], Dason Kurkiewicz [aut, ctb], Keith Hughitt [ctb]&quot;
+[1] &quot;Tyler Rinker [aut, cre, ctb], Dason Kurkiewicz [aut, ctb], Keith Hughitt [ctb], Albert Wang [ctb]&quot;
 </code></pre>
 
 <pre><code class="r">p_info(pacman, BugReports, URL)
@@ -923,7 +923,7 @@ $URL
 </code></pre>
 
 <pre><code>$Version
-[1] &quot;0.4.1&quot;
+[1] &quot;0.4.5&quot;
 </code></pre>
 
 <h5>Extracting Package Names</h5>
@@ -950,8 +950,8 @@ p_info(MASS, &quot;Depends&quot;)
 <pre><code class="r">p_extract(p_info(methods, &quot;Imports&quot;))
 </code></pre>
 
-<pre><code>  utils 
-&quot;utils&quot; 
+<pre><code>  utils   stats 
+&quot;utils&quot; &quot;stats&quot; 
 </code></pre>
 
 <h4>Package Author</h4>
@@ -961,7 +961,7 @@ p_info(MASS, &quot;Depends&quot;)
 <pre><code class="r">p_author(pacman)
 </code></pre>
 
-<pre><code>[1] &quot;Tyler Rinker [aut, cre, ctb], Dason Kurkiewicz [aut, ctb],\n        Keith Hughitt [ctb]&quot;
+<pre><code>[1] &quot;Tyler Rinker [aut, cre, ctb], Dason Kurkiewicz [aut, ctb],\n        Keith Hughitt [ctb], Albert Wang [ctb]&quot;
 </code></pre>
 
 <pre><code class="r">p_author()
@@ -980,8 +980,8 @@ p_info(MASS, &quot;Depends&quot;)
 <pre><code>
 To cite pacman in publications, please use:
 
-  Rinker, T. W. &amp; Kurkiewicz, D. (2015). pacman: Package
-  Management for R. version 0.4.1. University at Buffalo. Buffalo,
+  Rinker, T. W. &amp; Kurkiewicz, D. (2017). pacman: Package
+  Management for R. version 0.4.5. University at Buffalo. Buffalo,
   New York. http://github.com/trinker/pacman
 
 A BibTeX entry for LaTeX users is
@@ -991,8 +991,8 @@ A BibTeX entry for LaTeX users is
     author = {Tyler W. Rinker and Dason Kurkiewicz},
     organization = {University at Buffalo/SUNY},
     address = {Buffalo, New York},
-    note = {version 0.4.1},
-    year = {2015},
+    note = {version 0.4.5},
+    year = {2017},
     url = {http://github.com/trinker/pacman},
   }
 </code></pre>
@@ -1003,7 +1003,7 @@ A BibTeX entry for LaTeX users is
 <pre><code>
 To cite R in publications use:
 
-  R Core Team (2016). R: A language and environment for
+  R Core Team (2017). R: A language and environment for
   statistical computing. R Foundation for Statistical Computing,
   Vienna, Austria. URL https://www.R-project.org/.
 
@@ -1014,7 +1014,7 @@ A BibTeX entry for LaTeX users is
     author = {{R Core Team}},
     organization = {R Foundation for Statistical Computing},
     address = {Vienna, Austria},
-    year = {2016},
+    year = {2017},
     url = {https://www.R-project.org/},
   }
 
@@ -1030,12 +1030,14 @@ cite it when using it for data analysis. See also
 <pre><code class="r">p_data(lattice)
 </code></pre>
 
-<pre><code>  Data          Description                                          
-1 barley        Yield data from a Minnesota barley trial             
-2 environmental Atmospheric environmental conditions in New York City
-3 ethanol       Engine exhaust fumes from burning ethanol            
-4 melanoma      Melanoma skin cancer incidence                       
-5 singer        Heights of New York Choral Society singers           
+<pre><code>  Data                Description                                          
+1 USMortality         Mortality Rates in US by Cause and Gender            
+2 USRegionalMortality Mortality Rates in US by Cause and Gender            
+3 barley              Yield data from a Minnesota barley trial             
+4 environmental       Atmospheric environmental conditions in New York City
+5 ethanol             Engine exhaust fumes from burning ethanol            
+6 melanoma            Melanoma skin cancer incidence                       
+7 singer              Heights of New York Choral Society singers           
 </code></pre>
 
 <h4>Package Functions</h4>
@@ -1109,7 +1111,8 @@ cite it when using it for data analysis. See also
 [75] &quot;p_vign&quot;                      &quot;p_vignette&quot;                 
 [77] &quot;parse_git_repo&quot;              &quot;paste0&quot;                     
 [79] &quot;print.p_version_diff&quot;        &quot;print.search_any&quot;           
-[81] &quot;print.wide_table&quot;            &quot;writeToClipboard&quot;           
+[81] &quot;print.wide_table&quot;            &quot;try_bioc&quot;                   
+[83] &quot;writeToClipboard&quot;           
 </code></pre>
 
 <h4>Package Version</h4>
@@ -1119,13 +1122,13 @@ cite it when using it for data analysis. See also
 <pre><code class="r">p_version()
 </code></pre>
 
-<pre><code>[1] &#39;3.2.4&#39;
+<pre><code>[1] &#39;3.4.0&#39;
 </code></pre>
 
 <pre><code class="r">p_ver(pacman)
 </code></pre>
 
-<pre><code>[1] &#39;0.4.1&#39;
+<pre><code>[1] &#39;0.4.5&#39;
 </code></pre>
 
 <pre><code class="r">p_ver(pacman) &gt;= &quot;0.2.0&quot;
@@ -1208,7 +1211,7 @@ p_vign(pacman)
 
 <h3>CRAN Packages</h3>
 
-<p><code>p_cran</code> provides a list of available <a href="http://cran.r-project.org/">CRAN</a> packages.  Its counterpart, p_iscran provides a logical check whether a package is available on CRAN.</p>
+<p><code>p_cran</code> provides a list of available <a href="https://cran.r-project.org/">CRAN</a> packages.  Its counterpart, p_iscran provides a logical check whether a package is available on CRAN.</p>
 
 <pre><code class="r">p_cran()
 </code></pre>
@@ -1216,7 +1219,7 @@ p_vign(pacman)
 <pre><code class="r">length(p_cran())
 </code></pre>
 
-<pre><code>[1] 8145
+<pre><code>[1] 10488
 </code></pre>
 
 <pre><code class="r">p_iscran(&quot;qdap&quot;)
@@ -1282,8 +1285,8 @@ p_sa(&quot;hadley&quot;, &quot;author&quot;)
 <pre><code class="r">p_path()
 </code></pre>
 
-<pre><code>[1] &quot;C:/Users/Tyler/AppData/Local/Temp/RtmpQTFbGt/Rinst1f6459ebcda&quot;
-[2] &quot;C:/R/R-3.2.4/library&quot;                                         
+<pre><code>[1] &quot;C:/Users/Tyler/AppData/Local/Temp/RtmpcjTG6x/Rinst25a4170a78de&quot;
+[2] &quot;C:/R/R-3.4.0/library&quot;                                          
 </code></pre>
 
 <h3>Available Packages</h3>

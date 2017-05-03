@@ -11,7 +11,7 @@ uri_embed <- function(path, add="") {
 opts_knit$set(upload.fun = image_uri, self.contained=TRUE)
 
 ## set mirror
-options(repos="http://cran.rstudio.com/")
+options(repos="https://cran.rstudio.com/")
 
 ## ---- echo=FALSE, results='asis', warning=FALSE--------------------------
 uri_embed("r_pacman.png", 
