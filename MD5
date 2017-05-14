@@ -1,6 +1,6 @@
-1c32aa2598b9e4246e6eb2ba90d54d44 *DESCRIPTION
+caccb9a8be1a2aaf78c599f5f106873b *DESCRIPTION
 677cbae8b183206d9ecf546eefddab84 *NAMESPACE
-77b9e1cc1483384a10735c4aa3003e64 *NEWS
+cf48c91de9cc4035a5111b5bb8bbd062 *NEWS
 b315c2689c9eea173c77bcab5231a606 *R/p_author.R
 c4bc39c897531643934caebc20d664d8 *R/p_base.R
 12711e30ec502607bbe062cb6957db64 *R/p_basepath.R
@@ -18,7 +18,7 @@ de3bb84541c764f13e8a25cb3e3ed6c3 *R/p_depends.R
 b4bf12f81bc017f1767b7e2aa606bd98 *R/p_help.R
 34b12e93ff11e462bc73bab5c6e5153c *R/p_information.R
 6d851647805575b0babcaaac125685fc *R/p_install.R
-3567e445082323b1abd581ae7919d54a *R/p_install_gh.R
+1b2f0be17f10119f9432171df505c08c *R/p_install_gh.R
 8fce50e87637056635dd1666d0dc6b39 *R/p_install_version.R
 4ca19e72f48b01506406d89f937e801a *R/p_install_version_gh.R
 31ddbe9b4ad9cc32a27c4b0089eacf8a *R/p_install_version_single.R
@@ -50,10 +50,10 @@ eda89ce88d94f4dd45467e90ce6daa91 *R/p_zip.R
 bb1144a9e707e485f81bccf3e0821f38 *R/utils.R
 50c770d14d8f76ce86d71297a9fb00c9 *README.md
 11363da3856876dc90e392ad1fdbbddf *build/vignette.rds
-d53e30bcd022c68e31af1ba9e98e249a *inst/CITATION
+f44d4093dbbe6689c55585e648691d4c *inst/CITATION
 59f70e86829fb0f1a54aeda4a9aeadd7 *inst/doc/Introduction_to_pacman.R
 aeb69090855459f4575cf462c9b665c3 *inst/doc/Introduction_to_pacman.Rmd
-3bee67ecb7244223dde2bc7184e8f6e4 *inst/doc/Introduction_to_pacman.html
+9895ff7ab99017da74bec1f29701fa6e *inst/doc/Introduction_to_pacman.html
 bd19b6ee53afeb4845e5d7d1302c64e3 *inst/doc/pacman_functions_quick_reference.R
 376bc487d77d930a748e4ecbb79cb640 *inst/doc/pacman_functions_quick_reference.Rmd
 f2efcc791b6d951df31cf2a682b7cbfa *inst/doc/pacman_functions_quick_reference.html
